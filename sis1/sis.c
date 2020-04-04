@@ -32,10 +32,10 @@ int main() {
 
 //result:
 
-// Before fork: Process id is 166629
-// This is child process
-// Process id is 166630 and PPID is 166629
-// Before fork: Process id is 166629
-// This is parent process
-// Process id is 166629 and PPID is 166628
-// Newly created process id or child pid is 166630
+Before fork: Process id is 166629
+This is child process
+Process id is 166630 and PPID is 166629
+Before fork: Process id is 166629
+This is parent process
+Process id is 166629 and PPID is 166628
+Newly created process id or child pid is 166630
