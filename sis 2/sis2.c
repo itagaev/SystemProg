@@ -9,6 +9,19 @@
 static int parameter = 0;
 module_param(parameter, int, 0660);
 
+//a
+struct mystruct {
+   unsigned int arrayOfIntegers[8];
+};
+
+//passing name, type and permission for module
+static int param = 2000; //default value = 2000.
+module_param(param, int, 0660);
+
+
+
+//
+
 int show_all_cpu(void)
 {
     unsigned int ax = 11, bx = 0, cx = 1, dx = 0;
@@ -30,7 +43,8 @@ void filter_cpu(int cpu_id)
     {
         if (proc->cpu == cpu_id)
         {
-            printk(KERN_INFO "\tName of the process: [%s]. PID: [%d].\n", proc->comm, proc->pid);
+
+            printk(KERN_INFO " PID: [%d].\n",  proc->pid);
         }
     }
 }
